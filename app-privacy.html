@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/assets/icon-logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>应用权限申请与使用情况说明 - 梧桐树下</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <site-header></site-header>
+
+    <main>
+        <section class="legal-section">
+            <div class="container legal-container">
+                <h1 class="legal-title">应用权限申请与使用情况说明</h1>
+                <p class="legal-subtitle">请您了解各项权限的申请目的与使用场景，以便更好地管理个人信息与体验</p>
+
+                <div class="legal-content">
+                    <p>1. 为保障应用安全稳定运行，我们可能会申请或使用操作系统的相关权限。</p>
+                    <p>2. 为保障您的知情权，我们列出可能申请、使用的操作系统权限，您可根据实际需要进行管理。</p>
+                    <p>3. 随着产品升级，权限类型与目的可能调整，我们将及时更新列表，确保您及时获悉变化。</p>
+                    <p>4. 为满足业务与功能需求，我们可能使用第三方 SDK，这些第三方同样可能申请或使用相关权限。</p>
+                    <p>5. 在使用第三方 H5 页面或小程序时，相关插件也可能因业务需要而申请或使用操作系统权限。</p>
+
+                    <h2>iOS 操作系统应用使用权限</h2>
+                    <div class="table-wrapper">
+                        <table class="legal-table">
+                            <thead>
+                                <tr>
+                                    <th>权限名称</th>
+                                    <th>使用目的与场景</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <strong>照片权限</strong>
+                                        <p>NSPhotoLibraryUsageDescription</p>
+                                    </td>
+                                    <td>
+                                        <strong>访问用户的照片库，用于保存与分享应用内生成的图片。</strong>
+                                        <ul>
+                                            <li>用户主动使用分享功能时保存图片到相册。</li>
+                                            <li>仅在用户发起操作时请求权限，确保体验流畅便捷。</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>本地网络权限</strong>
+                                        <p>NSLocalNetworkUsageDescription</p>
+                                    </td>
+                                    <td>
+                                        <strong>允许应用在本地网络中发现并与其他设备通信，实现互动与数据传输。</strong>
+                                        <ul>
+                                            <li>应用启动时加载初始数据与配置。</li>
+                                            <li>刷新内容并获取实时更新。</li>
+                                            <li>发送与接收数据请求，支持用户交互。</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>定位权限</strong>
+                                        <p>NSLocationWhenInUseUsageDescription</p>
+                                        <p>NSLocationAlwaysAndWhenInUseUsageDescription</p>
+                                    </td>
+                                    <td>
+                                        <strong>获取用户当前位置，提供自动填写与个性化服务。</strong>
+                                        <ul>
+                                            <li>自动填写出生地，简化表单输入。</li>
+                                            <li>基于地理位置提供地域相关内容与服务。</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h2>Android 操作系统应用使用权限</h2>
+                    <div class="table-wrapper">
+                        <table class="legal-table">
+                            <thead>
+                                <tr>
+                                    <th>权限名称</th>
+                                    <th>使用目的与场景</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <strong>读取存储空间</strong>
+                                        <p>android.permission.READ_EXTERNAL_STORAGE</p>
+                                    </td>
+                                    <td>
+                                        <strong>读取设备存储中的照片与文件，支持分享流程。</strong>
+                                        <ul>
+                                            <li>用户在应用内使用分享功能时访问相册内容。</li>
+                                            <li>仅在用户主动请求保存或分享时触发。</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>网络访问权限</strong>
+                                        <p>android.permission.INTERNET</p>
+                                    </td>
+                                    <td>
+                                        <strong>连接互联网，保证应用正常运行与数据交互。</strong>
+                                        <ul>
+                                            <li>启动时加载必要数据与配置。</li>
+                                            <li>刷新内容并获取最新信息。</li>
+                                            <li>发送、接收数据请求，支撑用户操作。</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>读取剪贴板</strong>
+                                        <p>android.permission.READ_CLIPBOARD</p>
+                                    </td>
+                                    <td>
+                                        <strong>响应用户粘贴操作，读取剪贴板文本。</strong>
+                                        <ul>
+                                            <li>快捷输入：快速粘贴已复制文字。</li>
+                                            <li>跨应用数据共享：从其他应用粘贴内容。</li>
+                                            <li>搜索辅助：在搜索框粘贴信息以提升效率。</li>
+                                            <li>仅在用户主动粘贴时临时读取，不会常驻监控。</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>定位权限</strong>
+                                        <p>ACCESS_FINE_LOCATION</p>
+                                        <p>ACCESS_COARSE_LOCATION</p>
+                                    </td>
+                                    <td>
+                                        <strong>获取实时地理位置以提供地域相关服务。</strong>
+                                        <ul>
+                                            <li>自动填写出生地，提升表单体验。</li>
+                                            <li>基于地理位置提供地域相关内容与服务。</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>后台音频服务</strong>
+                                        <p>android.permission.READ_CLIPBOARD</p>
+                                    </td>
+                                    <td>
+                                        <strong>支持音频播放能力，包括背景音乐与音效控制。</strong>
+                                        <ul>
+                                            <li>用户浏览并播放音频内容。
+                                            <li>通过通知栏或控制中心控制播放与自启动。</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <site-footer></site-footer>
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>
