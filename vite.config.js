@@ -11,6 +11,9 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         contact: resolve(__dirname, 'contact.html'),
+        appPrivacy: resolve(__dirname, 'app-privacy.html'),
+        personalInfoList: resolve(__dirname, 'personal-info-list.html'),
+        sdkList: resolve(__dirname, 'sdk-list.html'),
         terms: resolve(__dirname, 'terms.html'),
         privacy: resolve(__dirname, 'privacy.html'),
       },
