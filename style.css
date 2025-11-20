@@ -59,10 +59,10 @@ body {
   align-items: center;
   gap: 28px;
   padding: 14px 20px;
+  margin: 0 18px;
   --color-black: #000000;
   background-color: color-mix(in oklab, var(--color-black) 3%, transparent);
   border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.8);
   --glass-blur: blur(40px);
   -webkit-backdrop-filter: var(--glass-blur);
   backdrop-filter: var(--glass-blur);
@@ -166,6 +166,10 @@ body {
 }
 
 @media (max-width: 430px) {
+  #header-contact {
+    display: none;
+  }
+
   .hero-title {
     font-size: 32px !important;
     line-height: 1.2 !important;
